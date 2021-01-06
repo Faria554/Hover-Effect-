@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Dividir o ecrã em 2 partes - azul e branco*/
+
+.lado {
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+}
+
+
+/*Controlar o lado esquerdo*/
+
+.esquerdo {
+    left: 0;
+    background: black;
+}
+
+
+/*Controlar o lado direito*/
+
+.direito {
+    right: 0;
+    background: white;
+}
+
+
+/*Editar o título do lado esquerdo*/
+
+.esquerdo h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 40%;
+    z-index: 1;
+}
+
+
+/*Editar o parágrafo do lado esquerdo*/
+
+.esquerdo p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 40%;
+}
+
+
+/*Editar o Texto do lado direito*/
+
+.direito h1 {
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    position: relative;
+    top: 40%;
+}
+
+
+/*Criar o circulo*/
+
+.circulo {
+    z-index: 1;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    position: fixed;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: 0.2s;
+}
